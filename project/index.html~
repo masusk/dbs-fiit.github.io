@@ -1,0 +1,157 @@
+---
+layout: dbs
+title:  "Projekt"
+---
+<div class="row">
+     <div id="sidebar" class="col-sm-3">
+	<ul class="well nav nav-pills nav-stacked affix">
+          <li class="nav-header">Obsah</li>
+            <li class="active"><a href="#basic-info">Zadanie</a></li>
+            <li><a href="#schedule">Čo sa odovzdáva a kedy</a></li>
+            <li><a href="#implementation">Implementačné prostredie</a></li>
+            <li><a href="#conditions">Čo sa hodnotí</a></li>
+            <li><a href="#faq">FAQ</a></li>
+	</ul>
+     </div>
+     <div class="col-sm-9">
+    	<div id="basic-info" class="row">
+	  <div class="col-sm-7">
+            <h2>Projekt</h2>
+            <h3>Zadanie</h3>
+            <p>
+              Vo vami zvolenom prostredí vytvorte databázovú aplikáciu, <b>ktorá komplexne rieši minimálne 5 scenárov</b> vo vami zvolenej doméne. Presný rozsah a konkretizáciu scenárov si dohodnete s Vašim cvičiacim na cvičení. Aplikácia musí realizovať tieto všeobecné scenáre:
+		<ul>
+			<li>Vytvorenie nového záznamu,</li>
+			<li>Aktualizácia existujúceho záznamu,</li>
+			<li>Vymazanie záznamu,</li>
+			<li>Zobrazenie prehľadu viacerých záznamov (spolu vybranou základnou štatistikou),</li>
+			<li>Vyhľadanie konkrétneho záznamu.</li>
+		</ul>
+            </p>
+            <p>
+              Aplikácia môže mať konzolové alebo grafické rozhranie (nie je kladený dôraz na GUI a tento aspekt sa nebude hodnotiť).</p>
+            </p>
+
+	    <p>
+              Scenáre, ktoré menia dáta musia byť realizované <b>s použitím transakcií</b> a aspoň jeden z nich musí zahŕňať <b>prácu s viacerými tabuľkami</b> (typicky vytvorenie záznamu a naviazanie cudzieho kľúča).
+            </p>
+
+            <p>Očakáva sa, že zrealizujete dve verzie aplikácie:</p>
+            <ol>
+              <li>bez použitia O/R mapovača (teda klasicky) za 18 bodov</li>
+              <li>s použitím O/R mapovača za 12 bodov</li>
+            </ol>
+	    <p>Už prvú verziu je teda nutné realizovať v prostredí, pre ktoré existuje O/R mapovač.</p>
+            <p>Bez odovzdanej (teda cvičiacim akceptovanej) prvej verzie nie je možné odovzdať druhú.</p>
+          </div><!--/col-->
+        </div><!--/row-->
+    	<div id="schedule" class="row">
+	  <div class="col-sm-7">
+            <h3>Čo sa odovzdáva a kedy</h3>
+	    <p>Pri oneskorenom odovzdaní sa uplatňuje penalizácia -10% (počítané z maximálneho získateľného počtu bodov za zadanie) za každý začatý deň oneskorenia. Výsledný počet bodov za zadanie nemôže byť záporný - v prípade, že po započítaní penalizácie vychádza zaporne, bude za zadanie pridelených 0 bodov (ale zadanie bude uznané ako odovzdané).</p>
+	    <p><b>Najneskorší možný termín odovzdania je v desiatom dni po oficiálnom termíne (so ziskom 0 bodov). Neskoršie odovzdania nebudú akceptované.</b></p>
+            <table style="font-size:13px;text-align:left;" class="table-condensed">
+              <thead>
+                <tr>
+                  <th>Týždeň/Dátum</th>
+                  <th>Čo</th>
+                  <th>Ako</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2.3.2014 23:59</td>
+                  <td>Zopár riadkov návrhu zadania (zámeru)</td>
+                  <td>Miesto odovzdania v AIS</td>
+                </tr>
+                <tr>
+                  <td>priebežne na cvičeniach</td>
+                  <td>Konzultácia zámeru s cvičiacim, prvá verzia dátového modelu, špecifikácia scenárov, ktoré bude aplikácia realizovať</td>
+                  <td>na cvičeniach a podľa pokynov cvičiacich</td>
+                </tr>
+                <tr>
+                  <td>6.4.2012 23:59</td>
+                  <td>Odovzdanie zdrojových súborov prvej verzie (bez O/R mapovača) a príslušnej dokumentácie</td>
+                  <td>Miesto odovzdania v AIS</td>
+                </tr>
+                <tr>
+                  <td>8me a 9te cvičenie</td>
+                  <td>Predvedenie prvej verzie (bez O/R mapovača) cvičiacemu</td>
+                  <td>na cvičeniach podľa pokynov cvičiaceho</td>
+                </tr>
+                <tr>
+                  <td>4.5.2013 23:59</td>
+                  <td>Odovzdanie zdrojových súborov druhej verzie (s O/R mapovačom) a príslušnej dokumentácie</td>
+                  <td>Miesto odovzdania v AIS</td>
+                </tr>
+                <tr>
+                  <td>11te a 12te cvičenie</td>
+                  <td>Predvedenie druhej verzie (s O/R mapovačom) cvičiacemu</td>
+                  <td>na cvičeniach podľa pokynov cvičiaceho</td>
+                </tr>
+              </tbody>
+           </table>
+          </div><!--/col-->
+        </div><!--/row-->
+    	<div id="implementation" class="row">
+	  <div class="col-sm-7">
+	    <h3>Implementačné prostredie</h3>
+		<p>Oficiálne podporovaným implementačným prostredím je JAVA s databázovým serverom MySQL, resp. PostgreSQL. Použitie iného prostredia je podmienené súhlasom cvičiaceho, pričom sa očakáva, že študent má s daným prostredím predchádzajúce skúsenosti (nie je vhodné sa v rámci predmetu DBS učiť nový jazyk).</p>
+		<p><b>V prípade, že sa študent rozhodne aplikáciu vyvíjať ako webovú, je bezpodmienečne nutné vyvíjať nad niektorým webovým frameworkom.</b></p>
+          </div><!--/col-->
+        </div><!--/row-->
+    	<div id="conditions" class="row">
+	  <div class="col-sm-7">
+            <h3>Čo sa hodnotí</h3>
+            <p>Vytvorením aplikácie preukazujete osvojenie si praktických zručností pri práci s databázou.</p>
+            <p>Hodnotí sa:</p>
+            <ul>
+              <li>Návrh dátového modelu</li>
+              <li>Implementácia dátového modelu (fyzický dátový model)</li>
+              <ul>              
+                  <li>Ten musí byť úplný</li>
+              </ul>
+              <li>Funkčnosť aplikácie (teda dohodnutých scenárov)</li>
+              <li>Efektívne využívanie relačnej databázy/jazyka SQL</li>
+                <ul>              
+                  <li>V aplikácii musíte použiť JOIN (všade kde je to vhodné, aspoň raz to vhodné musí byť)</li>
+                  <li>V aplikácii musíte použiť agregačnú funkciu</li>
+                  <li>V aplikácii musíte použiť GROUP BY</li>
+                </ul>              
+              <li>Prihliadať budeme aj na softvérový návrh aplikácie</li>
+            </ul>
+          </div><!--/col-->
+        </div><!--/row-->
+    	<div id="faq" class="row">
+	  <div class="col-sm-7">
+            <h3>FAQ</h3>
+            <div class="well">
+              <p>Q: Čo všetko má obsahovať dokumentácia?</p>
+              <p>A: Dokumentácia musí obsahovať minimálne tieto časti:</p>
+              <ol>
+              <li>Zadanie</li>
+              <li>špecifikáciu scenárov, ktoré aplikácia bude realizovať</li>
+              <li>diagram logického a fyzického dátového modelu spolu s ich opisom (vysvetlením)</li>
+              <li>stručný opis návrhu a implementácie
+                <ul>
+                  <li>prog. prostredie
+                  <li>návrhové rozhodnutia (napr. ako sa pristupuje k db, narába s connection)             
+                  <li>opis implementácie jednotlivých scenárov</li>
+                </ul>
+              </li>
+              </ol>
+            </div>
+
+            <div class="well">
+              <p>Q: Môžem riešiť projekt z PSI/TSS?</p>
+              <p>A: Áno</p>
+            </div>
+            <div class="well">
+              <p>Q: Projekt z PSI/TSS riešime dvaja. Môžeme obidvaja riešiť to isté aj na DBS?</p>
+              <p>A: V zásade to umožnené nie je, resp. je to možné iba v prípade, že budete mat s kolegom rôzne časti dátového modelu, ktoré sa prekrývaju iba minimálne (napr. tabuľka s používateľmi).</p>
+            </div>
+          </div><!--/col-->
+        </div><!--/row-->
+     </div> <!-- col-sm-10 -->
+</div> <!-- row -->
+

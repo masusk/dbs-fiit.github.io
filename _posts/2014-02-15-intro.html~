@@ -1,0 +1,14 @@
+---
+layout: dbs
+categories: announcements
+---
+      <div class="row-fluid">
+        <div class="span6">
+
+          <small class="pull-right">{{page.date}}</small>
+          <hr/>
+          <p>Pridal som materiály z posledných <a href=/DBS/lectures/lectures.shtml>prednášok</a>.</p>
+        </div>
+     </div>
+    <hr />
+

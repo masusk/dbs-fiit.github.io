@@ -1,0 +1,26 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+@media (min-width: 979px) {
+
+  #content-col.affix-top {
+      position:fixed;
+  	  width:265px;
+  	  margin-right:10px;
+  	  
+  }
+  
+  #content-col.affix {
+      position:static;
+      width:100%;
+  }
+
+}
+
+@media (min-width: 767px) {
+  .affix,.affix-top {
+      position:fixed;
+  }
+}
