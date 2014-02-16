@@ -3,7 +3,7 @@ layout: dbs
 title:  "Prednášky"
 ---
 <div class="row">
-     <div id="sidebar" class="col-sm-3">
+     <div id="sidebar" class="col-md-3">
 	<ul class="well nav nav-pills nav-stacked affix">
           <li class="nav-header">Prednášky</li>
   {% for post in site.posts reversed %}
@@ -13,11 +13,11 @@ title:  "Prednášky"
   {% endfor %}
 	</ul>
      </div>
-     <div class="col-sm-9">
+     <div class="col-md-9 col-md-offset-0 col-sm-8 col-sm-offset-4">
   {% for post in site.posts reversed %}
      {% if post.categories contains 'lectures' %}
 	<div id="{{post.anchor}}" class="row">
-	  <div class="col-sm-7">
+	  <div class="col-md-7">
 		{{ post.content }}
           </div>
 	</div>
