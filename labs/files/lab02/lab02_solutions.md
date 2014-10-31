@@ -52,3 +52,16 @@ aj viacero kurzov. Identifikujte entity, vzťahy medzi entitami a nakreslite ER 
 Riešenie:
 
 ![ER-diagram centrum volneho casu](/labs/files/lab02/cvc_zadanie.png "E-R centrum volneho casu")
+
+### Dátové modelovanie M - Farmaceutická firma
+
+Doplňte logický model distribúcie vo farmaceutickej firme tak, aby zahŕňal:
+
+* Evidenciu zásielok tovaru, pričom každú objednávku musí byť možné rozdeliť na viac zásielok pokiaľ si to odoberateľ želá
+* Evidenciu jázd obchodného reprezentanta. Pre každú jazdu farmaceutickú spoločnosť zaujíma množstvo spotrebovaného paliva a navštívené predajne.
+* Zmeniť mapovanie vytvorených objednávok na zodpovedného obchodného reprezentanta z priameho, na založené na regióne, v ktorom
+sa predajňa nachádza a reprezentant ho má na starosti
+
+Riešenie:
+
+![ER-diagram farmácia](/labs/files/lab02/farmacia_riesenie.png "E-R diagram farmácia")
