@@ -108,7 +108,7 @@ zahŕňa</panel_attributes>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..*
-m2=1..*
+m2=1
 na N kusov</panel_attributes>
     <additional_attributes>30;50;140;50</additional_attributes>
   </element>
