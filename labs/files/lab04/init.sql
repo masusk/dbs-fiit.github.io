@@ -12,7 +12,7 @@ CREATE DATABASE dbs_cvicenie_4
       LC_CTYPE='en_US.UTF-8';
 
 CREATE TABLE ludia (
-    id integer PRIMARY KEY DEFAULT nextval('serial'),
+    id SERIAL PRIMARY KEY,
     meno varchar(50),
     priezvisko varchar(50)
 );
