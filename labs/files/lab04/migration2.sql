@@ -22,8 +22,8 @@ CREATE TABLE pozicie (
     -- Auto incrementing ID
     id SERIAL PRIMARY KEY,
     pozicia varchar(50),
-    osoba_id integer REFERENCES ludia;
+    osoba_id integer REFERENCES ludia
 );
 
 CREATE TABLE profesori AS
-  SELECT * FROM ludia WHERE titul == 'prof.';
+  SELECT * FROM ludia WHERE titul LIKE 'prof\.';
