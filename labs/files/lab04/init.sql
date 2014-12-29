@@ -1,5 +1,5 @@
 /*
-    Desc: Init script for exercise 4
+    Desc: Init script for week 4 exercise.
     Syntax: PostgreSQL
     Version: 9.3.5
     Docs: http://www.postgresql.org/docs/9.3/static/sql-createdatabase.html
