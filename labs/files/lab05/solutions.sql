@@ -1,3 +1,6 @@
+-- 1. Select
+SELECT TOP 10 CreationDate FROM Users ORDER BY CreationDate asc;
+
 -- 2. Select
 SELECT AVG(DATEDIFF(week, CreationDate, GETDATE())) FROM Users;
 
@@ -10,14 +13,14 @@ DATEDIFF(week, Users.CreationDate, GETDATE())
 ORDER BY DisplayName;
 
 -- 6. Select
-SELECT COUNT(*) from Posts p where p.OwnerUserId IN
+SELECT COUNT(*) FROM Posts p WHERE p.OwnerUserId IN
 (
-SELECT u.id from Users u where
+SELECT u.id FROM Users u WHERE
 u.DisplayName <> 'Community' AND u.UpVotes > 20000
 )
 
 -- 7. Select
-SELECT SUM(CommentCount) from Posts where ClosedDate > '1.1.2013'
+SELECT SUM(CommentCount) FROM Posts WHERE ClosedDate > '1.1.2013'
   AND LastActivityDate < '1.1.2014';
 
 -- 8. Select
