@@ -2,7 +2,7 @@
 layout: dbs
 categories: announcements
 title: Rozdelenie do miestností pre riadny termín skúšky z DBS 2015.
-published: true
+published: false
 ---
 Riadny termín skúšky sa bude realizovať 8.6.2015, v učebniach CPU, PU1 a PU2 (na fakultných počítačoch, uistite sa, že sa na nich dokážete prihlásiť do domény učebne!!). Rozdelenie do miestností <b>nie je</b> podľa abecedy. Pozrite si [rozdelenie do miestností](/DBS2015_RT.pdf). (Odporúčam ctrl+F a hľadať svoje meno).
 
