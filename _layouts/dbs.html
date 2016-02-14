@@ -1,16 +1,3 @@
---- 
-navigation:
- - text: Oznamy
-   url: /
- - text: Základné informácie
-   url: /info/
- - text: Prednášky
-   url: /lectures/
- - text: Cvičenia
-   url: /labs/
- - text: Projekt
-   url: /project/
----
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -53,10 +40,10 @@ navigation:
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+	  {% for link in site.data.pages %}
 	  {% assign url = page.url|remove:'index.html' %}
-	  {% for link in page.navigation %}
             {% if link.url != '/labs/' %}
-	    <li {% if url == link.url %}class="active"{% endif %}>
+	     <li {% if url == link.url %}class="active"{% endif %}>
               <a href="{{link.url}}" title="{{link.title}}">{{link.text}}</a>
 	    </li>
           {% else %}
