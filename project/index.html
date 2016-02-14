@@ -18,37 +18,35 @@ title:  "Projekt"
             <h2>Projekt</h2>
             <h3>Zadanie</h3>
             <p>
-              Vo vami zvolenom prostredí vytvorte databázovú aplikáciu, <b>ktorá komplexne rieši minimálne 5 scenárov</b> vo vami zvolenej doméne. Presný rozsah a konkretizáciu scenárov si dohodnete s Vašim cvičiacim na cvičení. Aplikácia musí realizovať tieto všeobecné scenáre:
+              Vo vami zvolenom prostredí vytvorte databázovú aplikáciu, <b>ktorá komplexne rieši minimálne 6 scenárov</b> vo vami zvolenej doméne. Presný rozsah a konkretizáciu scenárov si dohodnete s Vašim cvičiacim na cvičení. Aplikáciu vytvoríte v dvoch iteráciach. V prvej iterácii, postavenej nad relačnou databázou, musí aplikácia realizovať tieto všeobecné scenáre:
 		<ul>
 			<li>Vytvorenie nového záznamu,</li>
 			<li>Aktualizácia existujúceho záznamu,</li>
 			<li>Vymazanie záznamu,</li>
 			<li>Zobrazenie prehľadu viacerých záznamov (spolu vybranou základnou štatistikou),</li>
-			<li>Vyhľadanie konkrétneho záznamu.</li>
+			<li>Zobrazenie konkrétneho záznamu,</li>
+			<li>Filtrovanie záznamov spĺňajúcich určité kritériá zadané používateľom.</li>
 		</ul>
             </p>
             <p>
-              Aplikácia môže mať konzolové alebo grafické rozhranie (nie je kladený dôraz na GUI a tento aspekt sa nebude hodnotiť).</p>
-            </p>
+              Aplikácia môže mať konzolové alebo grafické rozhranie. Je dôležité aby scenáre boli realizované realisticky - teda aby aplikácia (a teda aj jej používateľské rozhranie) naozaj poskytovala časť funkcionality tak, ako by ju očakával zákazník v danej doméne.</p>
 
 	    <p>
               Scenáre, ktoré menia dáta musia byť realizované <b>s použitím transakcií</b> a aspoň jeden z nich musí zahŕňať <b>prácu s viacerými tabuľkami</b> (typicky vytvorenie záznamu a naviazanie cudzieho kľúča).
             </p>
 
-            <p>Očakáva sa, že zrealizujete dve verzie aplikácie:</p>
-            <ol>
-              <li>bez použitia O/R mapovača (teda klasicky) za 18 bodov</li>
-              <li>s použitím O/R mapovača za 12 bodov</li>
-            </ol>
-	    <p>Už prvú verziu je teda nutné realizovať v prostredí, pre ktoré existuje O/R mapovač.</p>
-            <p>Bez odovzdanej (teda cvičiacim akceptovanej) prvej verzie nie je možné odovzdať druhú.</p>
+            <p>V druhej iterácii do aplikácie pridáte min. 1 scenár postavený na nerelačnej databáze <a href="http://redis.io/" target="_blank">Redis</a> alebo <a href="https://www.elastic.co/products/elasticsearch" target="_blank">Elasticsearch</a> (dohoda s cvičiacim na inom type nerelačnej db je samozrejme možná). Konkrétny scenár si dohodnete s vašim cvičiacim v závislosti od použitej databázy a domény vašej aplikácie (napr. štatistiky o interakciách s jednotlivými záznamami aplikácie v Redise alebo vyhľadavávanie záznamov cez Elasticsearch).
+
+            <p>Bez odovzdanej (teda cvičiacim akceptovanej) prvej iterácie nie je možné odovzdať druhú.</p>
+
+            <p>Pre získanie zápočtu je potrebné odovzdať (a cvičiaci musí akceptovať minimálnu úroveň kvality) obidve iterácie projektu.</p>
           </div><!--/col-->
         </div><!--/row-->
     	<div id="schedule" class="row">
 	  <div class="col-md-7">
             <h3>Čo sa odovzdáva a kedy</h3>
-	    <p>Pri oneskorenom odovzdaní sa uplatňuje penalizácia -10% (počítané z maximálneho získateľného počtu bodov za zadanie) za každý začatý deň oneskorenia. Výsledný počet bodov za zadanie nemôže byť záporný - v prípade, že po započítaní penalizácie vychádza zaporne, bude za zadanie pridelených 0 bodov (ale zadanie bude uznané ako odovzdané).</p>
-	    <p><b>Najneskorší možný termín odovzdania je v desiatom dni po oficiálnom termíne (so ziskom 0 bodov). Neskoršie odovzdania nebudú akceptované.</b></p>
+	    <p>Pri míľnikoch, ktorých výstup sa odovzdáva do AISu sa môže odovzdanie oneskoriť maximálne o 2 dni s penalizáciou 1/3 bodov za každý začatý deň oneskorenia (teda deň po termíne študent získa 2/3 bodov, dva dni po termíne 1/3 bodov). Neskoršie odovzdanie nie je umožnené. Neodovzdanie iterácie projektu znamená automatické nesplnenie podmienok absolvovania predmetu.</p>
+	    <p>V prípade nedodržania, resp. ignorácie miľniku, ktorý sa kontroluje na cvičeniach je penalizácia 3 body.</p>
             <table style="font-size:13px;text-align:left;" class="table-condensed">
               <thead>
                 <tr>
@@ -64,23 +62,33 @@ title:  "Projekt"
                   <td>na cvičeniach a podľa pokynov cvičiacich</td>
                 </tr>
                 <tr>
-                  <td>12.4.2015 23:59</td>
-                  <td>Odovzdanie zdrojových súborov prvej verzie (bez O/R mapovača) a príslušnej dokumentácie</td>
-                  <td>Miesto odovzdania v AIS</td>
-                </tr>
-                <tr>
-                  <td>8me a 9te cvičenie</td>
-                  <td>Predvedenie prvej verzie (bez O/R mapovača) cvičiacemu</td>
+                  <td>5te cvičenie</td>
+                  <td>Predvedenie zamýšľaných scenárov cvičiacemu cez implementované obrazovky (zatiaľ bez aplikačnej logiky)</td>
                   <td>na cvičeniach podľa pokynov cvičiaceho</td>
                 </tr>
                 <tr>
-                  <td>3.5.2015 23:59</td>
-                  <td>Odovzdanie zdrojových súborov druhej verzie (s O/R mapovačom) a príslušnej dokumentácie</td>
+                  <td>10.4.2016 23:59</td>
+                  <td>Odovzdanie zdrojových súborov prvej iterácie a príslušnej dokumentácie</td>
+                  <td>Miesto odovzdania v AIS</td>
+                </tr>
+		<tr>
+                  <td>7me cvičenie</td>
+                  <td>Predvedenie pripravenosti zamyšľanej nerelačnej db cvičiacemu (napr. rozbehaný redis na notebooku)</td>
+                  <td>na cvičeniach podľa pokynov cvičiaceho</td>
+                </tr>
+                <tr>
+                  <td>8me a 9te cvičenie</td>
+                  <td>Predvedenie prvej iterácie cvičiacemu</td>
+                  <td>na cvičeniach podľa pokynov cvičiaceho</td>
+                </tr>
+		<tr>
+                  <td>1.5.2016 23:59</td>
+                  <td>Odovzdanie zdrojových súborov druhej iterácie a príslušnej dokumentácie</td>
                   <td>Miesto odovzdania v AIS</td>
                 </tr>
                 <tr>
                   <td>11te a 12te cvičenie</td>
-                  <td>Predvedenie druhej verzie (s O/R mapovačom) cvičiacemu</td>
+                  <td>Predvedenie druhej iterácie cvičiacemu</td>
                   <td>na cvičeniach podľa pokynov cvičiaceho</td>
                 </tr>
               </tbody>
@@ -90,7 +98,7 @@ title:  "Projekt"
     	<div id="implementation" class="row">
 	  <div class="col-md-7">
 	    <h3>Implementačné prostredie</h3>
-		<p>Oficiálne podporovaným implementačným prostredím je JAVA s databázovým serverom MySQL, resp. PostgreSQL. Použitie iného prostredia je podmienené súhlasom cvičiaceho, pričom sa očakáva, že študent má s daným prostredím predchádzajúce skúsenosti (nie je vhodné sa v rámci predmetu DBS učiť nový jazyk).</p>
+		<p>Oficiálne podporovaným implementačným prostredím je JAVA s databázovým serverom PostgreSQL. Použitie iného prostredia je podmienené súhlasom cvičiaceho, pričom sa očakáva, že študent má s daným prostredím predchádzajúce skúsenosti (nie je vhodné sa v rámci predmetu DBS učiť nový jazyk).</p>
 		<p><b>V prípade, že sa študent rozhodne aplikáciu vyvíjať ako webovú, je bezpodmienečne nutné vyvíjať nad niektorým webovým frameworkom.</b></p>
           </div><!--/col-->
         </div><!--/row-->
@@ -112,7 +120,7 @@ title:  "Projekt"
                   <li>V aplikácii musíte použiť agregačnú funkciu</li>
                   <li>V aplikácii musíte použiť GROUP BY</li>
                 </ul>              
-              <li>Prihliadať budeme aj na softvérový návrh aplikácie</li>
+              <li>Prihliadať budeme aj na softvérový návrh aplikácie a ergonómiu používateľského rozhrania</li>
             </ul>
           </div><!--/col-->
         </div><!--/row-->
@@ -142,7 +150,7 @@ title:  "Projekt"
             </div>
             <div class="well">
               <p>Q: Projekt z PSI/TSS riešime dvaja. Môžeme obidvaja riešiť to isté aj na DBS?</p>
-              <p>A: V zásade to umožnené nie je, resp. je to možné iba v prípade, že budete mat s kolegom rôzne časti dátového modelu, ktoré sa prekrývaju iba minimálne (napr. tabuľka s používateľmi).</p>
+              <p>A: V zásade to umožnené nie je, resp. je to možné iba v prípade, že budete mat s kolegom rôzne časti dátového modelu, ktoré sa prekrývaju iba minimálne (napr. tabuľka s používateľmi). Určite to konzultujte s cvičiacim.</p>
             </div>
           </div><!--/col-->
         </div><!--/row-->
