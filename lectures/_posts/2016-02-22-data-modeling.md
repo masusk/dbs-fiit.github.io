@@ -3,7 +3,7 @@ layout: dbs
 categories: lectures
 anchor: data-modeling
 order: 2
-published: false
+published: true
 ---
 ## Druhá prednáška (Data modeling)
 
