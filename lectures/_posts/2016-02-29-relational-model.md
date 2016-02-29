@@ -3,6 +3,7 @@ layout: dbs
 categories: lectures
 anchor: relational-data-model
 order: 3
+published: true
 ---
 ## Tretia prednáška (Relačný model & relačná algebra)
 
