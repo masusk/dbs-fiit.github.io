@@ -14,4 +14,5 @@ Hovoril som o:
 * a prešli sme si zopár príkladov
 
           
-[Slajdy [pdf]](/lectures/files/02_DataModeling.pdf)
+* [Slajdy [pdf]](/lectures/files/02_DataModeling.pdf)
+  * [čarbanice [pdf]](/lectures/files/02_data_modeling_scrawls.pdf)
