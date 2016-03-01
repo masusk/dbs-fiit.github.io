@@ -14,4 +14,4 @@ Hovoril som o:
 * [relačnom modeli [pdf]](/lectures/files/03_02_RelationalModel.pdf)
   * [čarbanice [pdf]](/lectures/files/03_relational_model_scrawls.pdf)
 * [relačnej algebre [pdf]](/lectures/files/03_03_RelationalAlgebra.pdf)
-  * [čarbanice [pdf]](/lectures/files/03_relational_model_scrawls.pdf)
+  * [čarbanice [pdf]](/lectures/files/03_relational_algebra_scrawls.pdf)
