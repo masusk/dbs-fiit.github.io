@@ -3,9 +3,13 @@ layout: dbs
 categories: lectures
 anchor: transactions
 order: 6
-published: false
+published: true
 ---
 ## Šiesta prednáška (Transakcie)
+
+* Dokončil som SQL (GROUP BY)
+  * [sql](/lectures/files/06_statements-GROUP_BY.sql)
+  * [Dobrý materiál k JOINom](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 
 Prešli sme si ACID vlastnosti relačných databáz a transakcie ako nástroj na ich dosiahnutie:
 
